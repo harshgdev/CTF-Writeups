@@ -56,7 +56,7 @@ deloitte.com
 bp0.blogger.com
 ```
 
-These two sites seemed suspicious. I then identified the user who accessed both sites:
+These two sites seemed suspicious:
 
 - thepiratebay.org
 - generic-illicit-activities-hub.org
@@ -97,7 +97,7 @@ MAC Address: de:ad:be:ef:ca:fe (a spoofed address)
 | Releases the IP addr           | 2024-12-04 09:22:01.12        |
 
 
-This was  another challenge in the Tracem series, so it wasn’t going to be straightforward to solve via syslog logs. Additionally, the suspicious IP (10.18.21.121) didn’t have any corresponding syslog logs, making direct identification of the user more difficult.
+This was another challenge in the Tracem series, so it wasn’t going to be straightforward to solve via syslog logs. Additionally, the suspicious IP (10.18.21.121) didn’t have any corresponding syslog logs, making direct identification of the user more difficult.
 
 Since I had already established that the suspicious IP (10.18.21.121) was the only one to access the two suspicious sites (thepiratebay.org and generic-illicit-activities-hub.org), I decided to investigate further.
 
@@ -132,7 +132,6 @@ I got these result:
 At this point, I noticed that the user accessed 2.arch.pool.ntp.org, a relatively common URL. I assumed it wasn’t suspicious and did not cross-reference other IPs that accessed this site during the same timeframe. This was my critical oversight.
 
 Feel free to skip the rest if you'd like—I’ll now share what I explored after this step.
-
 
 ### Investigation Details
 #### Extraction and Analysis
@@ -186,6 +185,7 @@ From 10.17.X.X and 10.19.X.X:
 
 - Likely Subnets: 10.17.21.xxx, 10.17.121.xxx, etc.
 - Likely Hosts: 10.17.x.121.
+
 Despite exploring these, I found no leads.
 
 Then I moved on to checking the full logs.json file around the timeline of the IP guy. By this time, this challenge was my last one left, and I was very tired, so I couldn’t search properly.
