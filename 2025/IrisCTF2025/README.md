@@ -4,7 +4,7 @@ This repository contains detailed writeups for the challenges solved during the 
 
 | Category     | Sequence | Challenge Name              |
 |--------------|----------|-----------------------------|
-| **Forensics**| 1        | [DeldeIdel](./Forensics/DeldeIdel) |
+| **Forensics**| 1        | [DeldeIdel](./Forensics/Deldeldel) |
 |              | 2        | [Windy Day](./Forensics/Windy%20Day)       |
 |              | 3        | [Tracem1](./Forensics/Tracem1)       |
 |              | 4        | [Tracem2](./Forensics/Tracem2) |
