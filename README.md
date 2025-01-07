@@ -1,1 +1,1 @@
-Writeups of my solved challenges of the CTF Competitions.
+Writeups of the challenges I solved in CTF competitions.
